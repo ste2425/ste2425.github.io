@@ -1,6 +1,7 @@
 ---
 title: Replacing PSP Super Capacitor With Cell Battery
 tags: psp
+image: /images/previewImage.jpg
 ---
 
 So recently I built a consolized PSP (I’ll go into that in another post) however one problem with my implementation is the date and time keeps resetting. Time to see if there's anything I can do to fit that.
