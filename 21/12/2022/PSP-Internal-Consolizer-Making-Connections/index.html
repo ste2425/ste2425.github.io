@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>PSP Internal Consolizer - Making Connections | Super De Dupa Scoopa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Today I begin working on my internal PSP Consolizer. Probably around a year ago I started work on an external consolizer. The end goal was always for it to be internal to the PSP but there was so much">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PSP Internal Consolizer - Making Connections">
+<meta property="og:url" content="https://ste2425.github.io/21/12/2022/PSP-Internal-Consolizer-Making-Connections/index.html">
+<meta property="og:site_name" content="Super De Dupa Scoopa">
+<meta property="og:description" content="Today I begin working on my internal PSP Consolizer. Probably around a year ago I started work on an external consolizer. The end goal was always for it to be internal to the PSP but there was so much">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ste2425.github.io/images/consolizer%20-%20making%20connections/analog.png">
+<meta property="article:published_time" content="2022-12-21T20:33:04.183Z">
+<meta property="article:modified_time" content="2022-12-22T20:27:37.531Z">
+<meta property="article:author" content="Stephen Cooper">
+<meta property="article:tag" content="psp">
+<meta property="article:tag" content="psp-consolizer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ste2425.github.io/images/consolizer%20-%20making%20connections/analog.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">
+          
+
+          Super De Dupa Scoopa
+        </a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">I have no idea what i&#39;m doing</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Posts</a>
+        
+          <a class="main-nav-link" href="/about">About Me</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ste2425.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-PSP-Internal-Consolizer-Making-Connections" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/21/12/2022/PSP-Internal-Consolizer-Making-Connections/" class="article-date">
+  <time datetime="2022-12-21T20:33:04.183Z" itemprop="datePublished">21-12-2022</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PSP Internal Consolizer - Making Connections
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Today I begin working on my internal PSP Consolizer.</p>
+<p>Probably around a year ago I started work on an <a target="_blank" rel="noopener" href="https://github.com/ste2425/PSP-Consolizer">external consolizer</a>. The end goal was always for it to be internal to the PSP but there was so much I needed to learn first. Arduino dev, PCB design &amp; production etc. Figured it would be best to start easy and not have to worry about trying to cram it all into the PSP too.</p>
+<span id="more"></span>
+
+<p>The first challenge I needed to try and solve was how to connect both the original PSP’s buttons and the Arduino to the PSP’s motherboard.</p>
+<p>The PSP (2000 in my case) uses two 10-pin and one 14-pin 0.5mm FFC connectors for its face buttons.</p>
+<p>The analog stick uses an odd surface mating situation. Similar to PS2/3 controllers it relies on metal contacts on the analog stick to touch contacts on the motherboard. I’ll need to figure out a way to work with that.</p>
+<h1 id="FFC-Connectors"><a href="#FFC-Connectors" class="headerlink" title="FFC Connectors"></a>FFC Connectors</h1><p>This one seems simpler. Essentially a Y-splitter. I’m thinking, build some custom FPC’s. A male connector built into the FPC on one end and two FFC connectors on the other.</p>
+<p>Plug the male end into the motherboard, the PSP’s buttons into one FFC connector and the Arduino into the other.</p>
+<p>I can even simplify it and omit any grounds going to the Arduino.</p>
+
+  <a class="fancybox" 
+    href="/images/consolizer - making connections/left-connector.png"
+    title="Left Connector"
+  >
+    <img
+      src="/images/consolizer - making connections/left-connector-thumb.png"
+      alt="Left Connector" />
+  </a>
+
+  <span class="caption ">
+    Left Connector
+  </span>
+
+
+
+  <a class="fancybox" 
+    href="/images/consolizer - making connections/middle-connector.png"
+    title="Center Connector"
+  >
+    <img
+      src="/images/consolizer - making connections/middle-connector-thumb.png"
+      alt="Center Connector" />
+  </a>
+
+  <span class="caption ">
+    Center Connector
+  </span>
+
+
+<p>I haven’t test-fitted these yet.</p>
+<p>The plan was to print them on paper, offer it up to the motherboard and see how it fits. However, when I got my printer out it leaked ink all over my floor.</p>
+<p>Luckily I’m visiting my parents for Christmas so I’m sure they won’t mind me borrowing their printer.</p>
+<h1 id="Analog-Stick"><a href="#Analog-Stick" class="headerlink" title="Analog Stick"></a>Analog Stick</h1><p>The analog stick for the PSP is odd. It doesn’t mound with a FFC connector (on the 2000 anyway, the 3000 does). It instead has four gold contacts on the motherboard which press against contacts on the stick.</p>
+<p>So I need a way of intercepting these.</p>
+<p>Again a custom FPC is on the cards, this time a dual-layer one.</p>
+<p>Idea is it has contacts on both sides that will mate with the motherboard and stick. Ground and power can be directly connected but sense for the X and Y axis needs to be intercepted.</p>
+<p>This is because we either need to feed to the PSP a value from our digital potentiometer when using a controller or hook it directly to the original stick when not. If we connect both at the same time it will skew the resistance and result in a stick only operating at half its range.</p>
+<p>On the Arduino’s side I intend to use an Analog Multiplexer, which essentially acts like a switch for analog signals and will allow me to route either the digital potentiometer or the original stick to the PSP.</p>
+
+  <a class="fancybox" 
+    href="/images/consolizer - making connections/analog.png"
+    title="Analog Stick FPC"
+  >
+    <img
+      src="/images/consolizer - making connections/analog-thumb.png"
+      alt="Analog Stick FPC" />
+  </a>
+
+  <span class="caption ">
+    Analog Stick FPC
+  </span>
+
+
+<h1 id="Why-not-do-it-in-Software"><a href="#Why-not-do-it-in-Software" class="headerlink" title="Why not do it in Software?"></a>Why not do it in Software?</h1><p>The PSP has two interfaces an Arduino could use to talk to it in software, USB and a Serial Port exposed via the AV socket.</p>
+<p>There are also a number of projects attempting to do the same (external controllers) using these ports.</p>
+<h2 id="Operation-Ditto"><a href="#Operation-Ditto" class="headerlink" title="Operation-Ditto"></a>Operation-Ditto</h2><p><a target="_blank" rel="noopener" href="https://github.com/Operation-DITTO/Operation-DITTO">https://github.com/Operation-DITTO/Operation-DITTO</a></p>
+<p>Is a project to add a second analog stick to the PSP. It uses a little microcontroller to read the stick then talk to the PSP via the serial port and gives a custom PRX (plugin that runs on the PSP) the position of the stick.</p>
+<p>Trouble is the project has stalled as there is difficulty in getting the protocol right the PSP expects its data in.</p>
+<p>More info can be found on the PSP Homebrew Discord.</p>
+<h2 id="Remote-Joy-Lite"><a href="#Remote-Joy-Lite" class="headerlink" title="Remote Joy Lite"></a>Remote Joy Lite</h2><p>Remote Joy is an old-school program built back in the PSP’s homebrew hayday. It sent data (controls and video) over USB to an app that ran on a PC. This app displayed the video from the PSP and fed controls back into the PSP.</p>
+<p>It allowed you to essentially play games on the PSP whilst viewing them on the PC and using a controller.</p>
+<p>This <a target="_blank" rel="noopener" href="https://habr.com/ru/post/213513/">Blog Post</a> (written in Russian) took the sources from that project, stripped out everything except just the remote control (no video) and re-wrote the PC app as a script to run on a Raspberry Pi.</p>
+<p>I attempted to port the Pi script to run on the Arduino using the built in USBHost library but with little success. I could get the Arduino to connect to the PSP, importantly the custom PRX acknowledged the connection. However, no matter what I did I could not get the Arduino to send data to the PSP after the fact.</p>
+<h1 id="To-Finish-up"><a href="#To-Finish-up" class="headerlink" title="To Finish up"></a>To Finish up</h1><p>In the end, I would like the Arduino and the PSP to talk at a software level.</p>
+<p>There are so many options unlocked if that could happen. PSP app to make button mappings in real time, mappings per game etc.</p>
+<p>However I would also like to get a version of this out and working so I’ll stick with my current plan for now.</p>
+<p>Just need to get my hands on a printer and test-fit these adapters then get them ordered.</p>
+
+
+        
+          <div class="signoff">
+    
+        <div class="signoff-avatar">     
+            <span>  
+                <img class="no-fancybox" src="/images/avatar.png" />
+            </span>
+        </div>
+    
+    
+    <div class="signoff-content">
+        <p>
+            Hi, my names <strong>Stephen Cooper</strong>, I'm a software engineer specialising in web-based technologies.
+        </p>
+    
+        <p>
+            I'm probably not qualified to talk to you about what ever it is I've just talked to you about. 
+        </p>
+    
+        
+            <p>        
+                Why not reach out on <a target="_blank" rel="noopener" href="https://twitter.com/_s_cooper">Twitter</a> to see what I'm upto?
+            </p>
+        
+    </div>
+</div>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ste2425.github.io/21/12/2022/PSP-Internal-Consolizer-Making-Connections/" data-id="clbzjchk80001k4ue8r5vcade" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/psp/" rel="tag">psp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/psp-consolizer/" rel="tag">psp-consolizer</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/30/11/2022/psp-coin-cell/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Replacing PSP Super Capacitor With Cell Battery</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp/" rel="tag">psp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp-consolizer/" rel="tag">psp-consolizer</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/psp/" style="font-size: 20px;">psp</a> <a href="/tags/psp-consolizer/" style="font-size: 10px;">psp-consolizer</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/21/12/2022/PSP-Internal-Consolizer-Making-Connections/">PSP Internal Consolizer - Making Connections</a>
+          </li>
+        
+          <li>
+            <a href="/30/11/2022/psp-coin-cell/">Replacing PSP Super Capacitor With Cell Battery</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Stephen Cooper<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Posts</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/particles.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
