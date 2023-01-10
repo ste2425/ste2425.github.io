@@ -19,6 +19,7 @@ hexo.extend.tag.register("fancybox", function ([original, _thumbnail, _title]) {
   >
     <img
       src="${thumbnail || original}"
+      style="max-width: 300px"
       alt="${title}" />
   </a>
 
