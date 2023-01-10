@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>PSP Internal Consolizer - Fitting FPCs | Super De Dupa Scoopa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="I left my last post with a plan, to print and test fit some FPC’s. It didn’t go that well.                     The final custom FPC design">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PSP Internal Consolizer - Fitting FPCs">
+<meta property="og:url" content="https://ste2425.github.io/10/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/index.html">
+<meta property="og:site_name" content="Super De Dupa Scoopa">
+<meta property="og:description" content="I left my last post with a plan, to print and test fit some FPC’s. It didn’t go that well.                     The final custom FPC design">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ste2425.github.io/images/fitting%20fpcs/finaldesign2.png">
+<meta property="article:published_time" content="2023-01-10T10:47:20.123Z">
+<meta property="article:modified_time" content="2023-01-10T10:47:20.123Z">
+<meta property="article:author" content="Stephen Cooper">
+<meta property="article:tag" content="psp">
+<meta property="article:tag" content="psp-consolizer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ste2425.github.io/images/fitting%20fpcs/finaldesign2.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">
+          
+
+          Super De Dupa Scoopa
+        </a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">I have no idea what i&#39;m doing</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Posts</a>
+        
+          <a class="main-nav-link" href="/about">About Me</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ste2425.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-PSP-Internal-Consolizer-Fitting-FPCs" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/10/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/" class="article-date">
+  <time datetime="2023-01-10T10:47:20.123Z" itemprop="datePublished">10-01-2023</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PSP Internal Consolizer - Fitting FPCs
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I left my last post with a plan, to print and test fit some FPC’s.</p>
+<p>It didn’t go that well.</p>
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/finaldesign2.png"
+    title="The final custom FPC design"
+  >
+    <img
+      src="/images/fitting fpcs/finaldesign2.png"
+      style="max-width: 300px"
+      alt="The final custom FPC design" />
+  </a>
+
+  <span class="caption ">
+    The final custom FPC design
+  </span>
+
+
+<span id="more"></span>
+
+<h1 id="To-recap"><a href="#To-recap" class="headerlink" title="To recap"></a>To recap</h1><p>So for my internal Consolizer project one of the most difficult parts is going to be intercepting the button presses.</p>
+<p>I need to allow the original buttons to work but also allow the Arduino to trigger button presses, potentially at the same time.</p>
+<p>The original plan was to build small adapter FPC’s. These would sit in between the PSP’s original FPC and its motherboard. Thus giving us our hook to tap into those signals.</p>
+<p>After numerous design iterations (lots of printing and cutting and making tiny changes) I’ve concluded I just can’t make that work. There isn’t enough space.</p>
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/adapter1.png"
+    title="First Buttons Design"
+  >
+    <img
+      src="/images/fitting fpcs/adapter1.png"
+      style="max-width: 300px"
+      alt="First Buttons Design" />
+  </a>
+
+  <span class="caption ">
+    First Buttons Design
+  </span>
+
+
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/adapter4.jpg"
+    title="First Buttons Test Fit"
+  >
+    <img
+      src="/images/fitting fpcs/adapter4.jpg"
+      style="max-width: 300px"
+      alt="First Buttons Test Fit" />
+  </a>
+
+  <span class="caption ">
+    First Buttons Test Fit
+  </span>
+
+
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/adapter2.png"
+    title="First Analog Stick Design"
+  >
+    <img
+      src="/images/fitting fpcs/adapter2.png"
+      style="max-width: 300px"
+      alt="First Analog Stick Design" />
+  </a>
+
+  <span class="caption ">
+    First Analog Stick Design
+  </span>
+
+
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/adapter3.jpg"
+    title="First Analog Stick Test Fit"
+  >
+    <img
+      src="/images/fitting fpcs/adapter3.jpg"
+      style="max-width: 300px"
+      alt="First Analog Stick Test Fit" />
+  </a>
+
+  <span class="caption ">
+    First Analog Stick Test Fit
+  </span>
+
+
+<h1 id="The-Solution"><a href="#The-Solution" class="headerlink" title="The Solution"></a>The Solution</h1><p>Well if I can’t intercept the signals what can I do? The idea I stopped on was to replace the PSP’s FPC’s entirely. One for the left and one for the right.</p>
+<p>They aren’t complex and that would allow me to intercept the signals in any way I want.</p>
+<p>The left FPC is smaller and simpler so started with that.</p>
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/customfpc1.jpg"
+    title="First attempts at recreating the FPC shape"
+  >
+    <img
+      src="/images/fitting fpcs/customfpc1.jpg"
+      style="max-width: 300px"
+      alt="First attempts at recreating the FPC shape" />
+  </a>
+
+  <span class="caption ">
+    First attempts at recreating the FPC shape
+  </span>
+
+
+<p>Much like the adapters the process of re-creating the original involved lots of printing to paper, cutting out and offering up to the PSP.</p>
+<p>There must have been at least a dozen attempts before everything fitted nicely and the button footprints lined up.</p>
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/customfpc3.jpg"
+    title="Buttons seemed to line up"
+  >
+    <img
+      src="/images/fitting fpcs/customfpc3.jpg"
+      style="max-width: 300px"
+      alt="Buttons seemed to line up" />
+  </a>
+
+  <span class="caption ">
+    Buttons seemed to line up
+  </span>
+
+
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/customfpc2.jpg"
+    title="Even the shoulder button lined up"
+  >
+    <img
+      src="/images/fitting fpcs/customfpc2.jpg"
+      style="max-width: 300px"
+      alt="Even the shoulder button lined up" />
+  </a>
+
+  <span class="caption ">
+    Even the shoulder button lined up
+  </span>
+
+
+<p>Once the board layout was right there was another problem.</p>
+<h1 id="The-Buttons"><a href="#The-Buttons" class="headerlink" title="The Buttons"></a>The Buttons</h1><p>Most controller buttons work with an exposed footprint on the PCB and a carbon pad embedded within the button rubber. This causes a short when the button is pressed and triggers a signal.</p>
+<p>The PSP does this, but differently. The FPC is dual layer. The bottom layer has the footprint, the top layer the carbon pad. It’s all self contained.</p>
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/originalfpc.jpg"
+    title="The original FPC. Image courtesy of Peter Lustig from the PSP Homebrew Discord"
+  >
+    <img
+      src="/images/fitting fpcs/originalfpc.jpg"
+      style="max-width: 300px"
+      alt="The original FPC. Image courtesy of Peter Lustig from the PSP Homebrew Discord" />
+  </a>
+
+  <span class="caption ">
+    The original FPC. Image courtesy of Peter Lustig from the PSP Homebrew Discord
+  </span>
+
+
+<p>This probably makes it more robust, stops buttons failing to register when they get old. It also makes it very difficult to replicate. I’m not even sure it’s possible for a DIYer.</p>
+<p>So I had to find an alternative. I settled upon micro tactile switches like those used in the Gameboy SP.</p>
+<p>They can come in a wide range of sizes so I just needed to measure the height of the original button rubbers and find a switch as close to that as I could.</p>
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/finaldesign1.jpg"
+    title="Custom left button FPC out on paper"
+  >
+    <img
+      src="/images/fitting fpcs/finaldesign1.jpg"
+      style="max-width: 300px"
+      alt="Custom left button FPC out on paper" />
+  </a>
+
+  <span class="caption ">
+    Custom left button FPC out on paper
+  </span>
+
+
+
+  <a class="fancybox" 
+    href="/images/fitting fpcs/finaldesign2.png"
+    title="The final custom FPC design"
+  >
+    <img
+      src="/images/fitting fpcs/finaldesign2.png"
+      style="max-width: 300px"
+      alt="The final custom FPC design" />
+  </a>
+
+  <span class="caption ">
+    The final custom FPC design
+  </span>
+
+
+<h1 id="Final-Stretch"><a href="#Final-Stretch" class="headerlink" title="Final Stretch"></a>Final Stretch</h1><p>So with the problems addressed I thought I could go ahead and have my FPC made. I had spent hours printing and test fitting; found the right tactile switches it was all good to go.</p>
+<p>Yea it didn’t work out like that.</p>
+<p>The cheapest quote I got was from OSHPark, about $35. Not amazing but not out of my reach.</p>
+<p>Sadly the cheapest tracking shipment on top of that was around another $35.</p>
+<p>All in so far were around £57. Getting a bit rich for my tastes but I was tempted.</p>
+<p>The nail in the coffin was VAT. I have no idea if this is Brexit shafting us, an odd EU thing or just the way it is. But OSHPark doesn’t seem to handle VAT properly anymore.</p>
+<p>I’ve read multiple accounts on Twitter of overseas customers paying VAT at checkout, but then when goods arrive getting customs charges. They end up paying VAT twice and handling fees.</p>
+<p>All that added up would put it way out of my price range.</p>
+<h1 id="To-Finish-Up"><a href="#To-Finish-Up" class="headerlink" title="To Finish Up"></a>To Finish Up</h1><p>So, if you’re still here, we have a nicely designed replacement FPC for the left buttons. A solution for the dual layer carbon pad contacts thing. It’s all been test fitted and <em>should</em> work, I just can’t afford to have them made.</p>
+<p>Not wanting this to hold up my entire project Iv’e thought about a hack of a workaround.</p>
+<p>I’m going to use my re-designed FPC as a template (printed to paper) and hot glue the tact switches into place. I’ll chop in half a cheap FFC cable and solder its wires directly to the tact switches.</p>
+<p>It’s not amazing but it will (i think) work and get me going again. I don’t want to be hung up on this custom FPC issue.</p>
+<p>The other benefit is someone attempting to build this in the future has options, they could have the custom FPC’s made for a more professional finish or if there skint like me do this DIY solution instead.</p>
+
+
+        
+          <div class="signoff">
+    
+        <div class="signoff-avatar">     
+            <span>  
+                <img class="no-fancybox" src="/images/avatar.png" />
+            </span>
+        </div>
+    
+    
+    <div class="signoff-content">
+        <p>
+            Hi, my names <strong>Stephen Cooper</strong>, I'm a software engineer specialising in web-based technologies.
+        </p>
+    
+        <p>
+            I'm probably not qualified to talk to you about what ever it is I've just talked to you about. 
+        </p>
+    
+        
+            <p>        
+                Why not reach out on <a target="_blank" rel="noopener" href="https://twitter.com/_s_cooper">Twitter</a> to see what I'm upto?
+            </p>
+        
+    </div>
+</div>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ste2425.github.io/10/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/" data-id="clcq34bgu00021suebs8m7nle" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/psp/" rel="tag">psp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/psp-consolizer/" rel="tag">psp-consolizer</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/21/12/2022/PSP-Internal-Consolizer-Making-Connections/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">PSP Internal Consolizer - Making Connections</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp/" rel="tag">psp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp-consolizer/" rel="tag">psp-consolizer</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/psp/" style="font-size: 20px;">psp</a> <a href="/tags/psp-consolizer/" style="font-size: 10px;">psp-consolizer</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/10/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/">PSP Internal Consolizer - Fitting FPCs</a>
+          </li>
+        
+          <li>
+            <a href="/21/12/2022/PSP-Internal-Consolizer-Making-Connections/">PSP Internal Consolizer - Making Connections</a>
+          </li>
+        
+          <li>
+            <a href="/30/11/2022/psp-coin-cell/">Replacing PSP Super Capacitor With Cell Battery</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Stephen Cooper<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Posts</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/particles.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
