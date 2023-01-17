@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    <url>
+        <loc>https://ste2425.github.io/08/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/</loc>
+    
+        <lastmod>2023-01-10</lastmod>
+    
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/21/12/2022/PSP-Internal-Consolizer-Making-Connections/</loc>
+    
+        <lastmod>2022-12-22</lastmod>
+    
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/30/11/2022/psp-coin-cell/</loc>
+    
+        <lastmod>2022-12-05</lastmod>
+    
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/about/index.html</loc>
+    
+        <lastmod>2022-12-02</lastmod>
+    
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/</loc>
+        <lastmod>2023-01-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+    <url>
+        <loc>https://ste2425.github.io/tags/psp/</loc>
+        <lastmod>2023-01-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/tags/psp-consolizer/</loc>
+        <lastmod>2023-01-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+  
+
+  
+</urlset>
