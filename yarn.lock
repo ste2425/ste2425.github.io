@@ -596,6 +596,11 @@ hexo-generator-index@^2.0.0:
     hexo-pagination "1.0.0"
     timsort "^0.3.0"
 
+hexo-generator-robotstxt@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/hexo-generator-robotstxt/-/hexo-generator-robotstxt-0.2.0.tgz#e65a68659808904295f6ad99ebf6abbbeb6a32f2"
+  integrity sha512-86ZsTTNug8ffQwm0pJ/AzngMdQnDJxHCRVn28NPu+OB/dK40bUhPcE0inGvwh3k60SagX1GXY8StvlGkpxGxqA==
+
 hexo-generator-sitemap@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/hexo-generator-sitemap/-/hexo-generator-sitemap-3.0.1.tgz#6183995f918330c06d99aa18ca9de81dd8055841"
