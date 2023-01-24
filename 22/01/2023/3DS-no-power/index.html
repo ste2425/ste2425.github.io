@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>3DS - Not powering on | Super De Dupa Scoopa</title><meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Been waiting on a few PCB’s to arrive for my PSP Consolizer project so thought I’d waste the time fixing the pile of broken consoles I’ve got. The newest addition was a 3DS which would not power on or">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3DS - Not powering on">
+<meta property="og:url" content="https://ste2425.github.io/22/01/2023/3DS-no-power/index.html">
+<meta property="og:site_name" content="Super De Dupa Scoopa">
+<meta property="og:description" content="Been waiting on a few PCB’s to arrive for my PSP Consolizer project so thought I’d waste the time fixing the pile of broken consoles I’ve got. The newest addition was a 3DS which would not power on or">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ste2425.github.io/images/ds3-nopower/ribbons.JPG">
+<meta property="article:published_time" content="2023-01-22T21:10:59.923Z">
+<meta property="article:modified_time" content="2023-01-24T13:59:18.347Z">
+<meta property="article:author" content="Stephen Cooper">
+<meta property="article:tag" content="3DS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ste2425.github.io/images/ds3-nopower/ribbons.JPG">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">
+          
+
+          Super De Dupa Scoopa
+        </a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">I have no idea what i&#39;m doing</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Posts</a>
+        
+          <a class="main-nav-link" href="/about">About Me</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ste2425.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-3DS-no-power" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/22/01/2023/3DS-no-power/" class="article-date">
+  <time datetime="2023-01-22T21:10:59.923Z" itemprop="datePublished">22-01-2023</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      3DS - Not powering on
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Been waiting on a few PCB’s to arrive for my PSP Consolizer project so thought I’d waste the time fixing the pile of broken consoles I’ve got.</p>
+<p>The newest addition was a 3DS which would not power on or charge.</p>
+<span id="more"></span>
+
+<h1 id="The-Problem"><a href="#The-Problem" class="headerlink" title="The Problem"></a>The Problem</h1><p>Quite simply it would not power on, or charge. No other information was provided. It’s possible the fault could be with the DC-in side of things and with a charged battery it will power up fine. It’s also possible the whole thing is buggered.</p>
+<p>It’s quite common for them to get cold solder joints (broken joints) on the power connector and reflowing them can fix the charging issue.</p>
+<p><em>TLDR; This was the issue, reflowed the joints, replaced a swollen battery and it works. You don’t need to read the rest now</em></p>
+<h2 id="Powering-the-console"><a href="#Powering-the-console" class="headerlink" title="Powering the console"></a>Powering the console</h2><p>Sadly I don’t have a 3DS charger, both the charging dock and the console use this bespoke connector.</p>
+<p>You can however modify it to use USB so I decided, whilst testing, to do that. If I can get it all to work I may invest in a proper charger.</p>
+<p>Opening the dock was easy enough, just a few tri-wing screws. Interestingly the console itself uses normal Phillips head screws. You would have thought Nintendo would have used the tri-wing on the device with all the complicated hardware that they wouldn’t want people snooping in on, not an empty plastic box.</p>
+<p>Once in there is a tiny circuit board with nice big solder points that even have polarity marked for us, soldering up the cable was nice and simple.</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/dock-con.JPG"
+    title="Solder points"
+  >
+    <img
+      src="/images/ds3-nopower/dock-con.JPG"
+      style="max-width: 300px"
+      alt="Solder points" />
+  </a>
+
+  <span class="caption ">
+    Solder points
+  </span>
+
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/dock-connector.JPG"
+    title="Dock connector with markings"
+  >
+    <img
+      src="/images/ds3-nopower/dock-connector.JPG"
+      style="max-width: 300px"
+      alt="Dock connector with markings" />
+  </a>
+
+  <span class="caption ">
+    Dock connector with markings
+  </span>
+
+
+<p>With that done it was time to test the console. After re-assembly, as expected, nothing happened. No orange light. No power. Nothing.</p>
+<p>I checked the docks pins with a multi-meter to be sure and was reading 5V with the correct polarity.</p>
+<p>Seems the issue is within the console.</p>
+<h2 id="Disassembly"><a href="#Disassembly" class="headerlink" title="Disassembly"></a>Disassembly</h2><p>Taking the 3DS apart is quite easy, just a dozen small Phillips head screws.</p>
+<p>First are the screws holding the battery cover in. These have a locking clip on the back so they can’t be removed from the cover, stopping them from getting lost</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/back.JPG"
+    title="Battery cover"
+  >
+    <img
+      src="/images/ds3-nopower/back.JPG"
+      style="max-width: 300px"
+      alt="Battery cover" />
+  </a>
+
+  <span class="caption ">
+    Battery cover
+  </span>
+
+
+<p>Once removed it’s just a few more screws to remove the backplate. Note the silver screw visible inside the cart slot (the circle at the top of the image).</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/under-bat-cover.JPG"
+    title="Backplate screws"
+  >
+    <img
+      src="/images/ds3-nopower/under-bat-cover.JPG"
+      style="max-width: 300px"
+      alt="Backplate screws" />
+  </a>
+
+  <span class="caption ">
+    Backplate screws
+  </span>
+
+
+<p>After removing the battery the backplate can carefully be lifted.</p>
+<p><strong>BE CAREFUL</strong> the shoulder buttons are connected with two small ribbon cables and these will get pulled if you are heavy handed.</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/ribbons.JPG"
+    title="Shoulder ribbons (Picture taken after the repair)"
+  >
+    <img
+      src="/images/ds3-nopower/ribbons.JPG"
+      style="max-width: 300px"
+      alt="Shoulder ribbons (Picture taken after the repair)" />
+  </a>
+
+  <span class="caption ">
+    Shoulder ribbons (Picture taken after the repair)
+  </span>
+
+
+<h2 id="Repair"><a href="#Repair" class="headerlink" title="Repair"></a>Repair</h2><p>With access granted we can begin investigation. The first thing to check is that power is getting into the console. It’s quite common for cold solder joints on the connector. I did a continuity test between the gold pins on either side and the edge of the solder pad on the PCB.</p>
+<p>I got no continuity. After scraping slightly on the solder pad to be sure no oxidisation or flux is stopping the connection there was still no continuity.</p>
+<p>Reflowing all the pins with fresh solder and checking again we now have continuity.</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/repair.JPG"
+    title="Repaired connector"
+  >
+    <img
+      src="/images/ds3-nopower/repair.JPG"
+      style="max-width: 300px"
+      alt="Repaired connector" />
+  </a>
+
+  <span class="caption ">
+    Repaired connector
+  </span>
+
+
+<p>After partially re-assembling and testing in the dock we have an orange light!</p>
+
+  <a class="fancybox" 
+    href="/images/butwait.jpg"
+    title="But Wait, There's More!"
+  >
+    <img
+      src="/images/butwait.jpg"
+      style="max-width: 300px"
+      alt="But Wait, There's More!" />
+  </a>
+
+  <span class="caption ">
+    But Wait, There's More!
+  </span>
+
+
+<p>…Then 5 seconds later the orange light turned off.</p>
+<p>Remove it from the charger, put it back in, orange light on, 5 seconds and orange light off.</p>
+<h2 id="The-battery"><a href="#The-battery" class="headerlink" title="The battery"></a>The battery</h2><p>Taking a closer look at the battery it seemed obvious, not too sure how I missed it. The thing is quite swollen.</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/batteryswell.gif"
+    title="Battery Swell"
+  >
+    <img
+      src="/images/ds3-nopower/batteryswell.gif"
+      style="max-width: 300px"
+      alt="Battery Swell" />
+  </a>
+
+  <span class="caption ">
+    Battery Swell
+  </span>
+
+
+<p>Not too sure how a battery with such damage would respond to charging (besides with fire) so maybe the DS has detected this and refuses to charge?</p>
+<p>Tried to power the console on mains without a battery and got the same behavior. A day later and a new battery and we have an orange light, and it stays on!</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/charge.JPG"
+    title="Charging light"
+  >
+    <img
+      src="/images/ds3-nopower/charge.JPG"
+      style="max-width: 300px"
+      alt="Charging light" />
+  </a>
+
+  <span class="caption ">
+    Charging light
+  </span>
+
+
+<h2 id="To-finish-up"><a href="#To-finish-up" class="headerlink" title="To finish up"></a>To finish up</h2><p>So we had cold solder joints on the power connector, applied fresh solder fixed that problem. We also had a swollen battery, replacing that and the console is as good as new.</p>
+
+  <a class="fancybox" 
+    href="/images/ds3-nopower/working.JPG"
+    title="It's Alive"
+  >
+    <img
+      src="/images/ds3-nopower/working.JPG"
+      style="max-width: 300px"
+      alt="It's Alive" />
+  </a>
+
+  <span class="caption ">
+    It's Alive
+  </span>
+
+<!-- flag of hidden posts -->
+
+        
+          <div class="signoff">
+    
+        <div class="signoff-avatar">     
+            <span>  
+                <img class="no-fancybox" src="/images/avatar.png" />
+            </span>
+        </div>
+    
+    
+    <div class="signoff-content">
+        <p>
+            Hi, my names <strong>Stephen Cooper</strong>, I'm a software engineer specialising in web-based technologies.
+        </p>
+    
+        <p>
+            I'm probably not qualified to talk to you about what ever it is I've just talked to you about. 
+        </p>
+    
+        
+            <p>        
+                Why not reach out on <a target="_blank" rel="noopener" href="https://twitter.com/_s_cooper">Twitter</a> to see what I'm upto?
+            </p>
+        
+    </div>
+</div>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ste2425.github.io/22/01/2023/3DS-no-power/" data-id="cldaazsom0001wsue5de69e8j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"></ul>
+
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp/" rel="tag">psp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp-consolizer/" rel="tag">psp-consolizer</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/psp/" style="font-size: 20px;">psp</a> <a href="/tags/psp-consolizer/" style="font-size: 10px;">psp-consolizer</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/08/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/">PSP Internal Consolizer - Fitting FPCs</a>
+          </li>
+        
+          <li>
+            <a href="/21/12/2022/PSP-Internal-Consolizer-Making-Connections/">PSP Internal Consolizer - Making Connections</a>
+          </li>
+        
+          <li>
+            <a href="/30/11/2022/psp-coin-cell/">Replacing PSP Super Capacitor With Cell Battery</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Stephen Cooper<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Posts</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/particles.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
