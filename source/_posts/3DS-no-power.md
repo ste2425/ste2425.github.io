@@ -3,7 +3,6 @@ title: 3DS - Not powering on
 tags:
   - 3DS
 image: /images/ds3-nopower/ribbons.JPG
-hidden: true
 ---
 
 Been waiting on a few PCB's to arrive for my PSP Consolizer project so thought I'd waste the time fixing the pile of broken consoles I've got.
@@ -27,6 +26,12 @@ Sadly I don't have a 3DS charger, both the charging dock and the console use thi
 You can however modify it to use USB so I decided, whilst testing, to do that. If I can get it all to work I may invest in a proper charger.
 
 Opening the dock was easy enough, just a few tri-wing screws. Interestingly the console itself uses normal Phillips head screws. You would have thought Nintendo would have used the tri-wing on the device with all the complicated hardware that they wouldn't want people snooping in on, not an empty plastic box.
+
+{% fancybox /images/ds3-nopower/dock.jpg "Dock screws" %}
+
+It's worth noting that once inside there are three little legs with springs on the bottom. These help hold the DS in place. If you open the dock at an angle these can easily fall out.
+
+{% fancybox /images/ds3-nopower/dock-open.jpg "Dock springs" %}
 
 Once in there is a tiny circuit board with nice big solder points that even have polarity marked for us, soldering up the cable was nice and simple.
 
