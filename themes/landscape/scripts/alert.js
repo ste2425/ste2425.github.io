@@ -1,8 +1,3 @@
-/**
- * {% alert primary %}
- * Some super duper content
- * {% endalert %}
- */
 const levels = {
   info: "alert-info",
   success: "alert-success",

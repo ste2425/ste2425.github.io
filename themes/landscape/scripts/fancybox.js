@@ -28,3 +28,20 @@ hexo.extend.tag.register("fancybox", function ([original, _thumbnail, _title]) {
   </span>
 `;
 });
+
+hexo.extend.tag.register(
+  "fancyboxmedia",
+  function ([original, _thumbnail, _title]) {
+    const title = !_title ? _thumbnail : _title,
+      thumbnail = !_title ? undefined : _thumbnail;
+
+    return `
+  <a class="fancybox" 
+    href="${original}"
+    title="${title}"
+  >
+  </a>
+
+`;
+  }
+);
