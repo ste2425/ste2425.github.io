@@ -59,7 +59,7 @@ Before doing this work _don't_ connect the PSVita to the RPi.
     | `auxAudio.png` located in `/home/pi/Pictures/Icons` | `/home/pi/Pictures/Icons` |
     | `aucAudioConfigure.png` located in `/home/pi/Pictures/Icons` | `/home/pi/Pictures/Icons` |
 - Once copied you need to take ownership of the `.sh` files and mark them as executable
-  - from a terminal run `sudo chown pi *.sh && chmod +rwx *.sh`
+  - from a terminal run `cd ~ && sudo chown pi *.sh && chmod +rwx *.sh`
 - Now you need to add the menu items, this is done with the `menulibre` tool
   - open a terminal and run `menulibre`
   - You may see warning messages logged but this is fine, wait till the tool opens
