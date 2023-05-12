@@ -128,7 +128,11 @@
   });
 
   if ($.fancybox) {
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+      helpers: {
+        media: true,
+      },
+    });
   }
 
   // Mobile nav

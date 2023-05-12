@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-        <loc>https://ste2425.github.io/25/01/2023/3DS-no-power/</loc>
+        <loc>https://ste2425.github.io/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/</loc>
+    
+        <lastmod>2023-05-12</lastmod>
+    
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/22/01/2023/3DS-no-power/</loc>
     
         <lastmod>2023-01-25</lastmod>
     
@@ -48,29 +57,43 @@
   
     <url>
         <loc>https://ste2425.github.io/</loc>
-        <lastmod>2023-01-25</lastmod>
+        <lastmod>2023-05-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
   
     <url>
-        <loc>https://ste2425.github.io/tags/3DS/</loc>
-        <lastmod>2023-01-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-  
-    <url>
         <loc>https://ste2425.github.io/tags/psp/</loc>
-        <lastmod>2023-01-25</lastmod>
+        <lastmod>2023-05-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
   
     <url>
         <loc>https://ste2425.github.io/tags/psp-consolizer/</loc>
-        <lastmod>2023-01-25</lastmod>
+        <lastmod>2023-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/tags/3DS/</loc>
+        <lastmod>2023-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/tags/PSVita/</loc>
+        <lastmod>2023-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+  
+    <url>
+        <loc>https://ste2425.github.io/tags/VitaDock/</loc>
+        <lastmod>2023-05-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

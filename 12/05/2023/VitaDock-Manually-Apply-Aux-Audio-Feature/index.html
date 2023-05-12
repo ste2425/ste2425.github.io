@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>VitaDock+ Manually Apply Aux Audio Feature | Super De Dupa Scoopa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This little write up documents how to manually apply my feature change to the VitaDock+ project to enable the use of Aux Audio.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VitaDock+ Manually Apply Aux Audio Feature">
+<meta property="og:url" content="https://ste2425.github.io/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/index.html">
+<meta property="og:site_name" content="Super De Dupa Scoopa">
+<meta property="og:description" content="This little write up documents how to manually apply my feature change to the VitaDock+ project to enable the use of Aux Audio.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ste2425.github.io/images/vitadockaux/thumb.png">
+<meta property="article:published_time" content="2023-05-12T14:12:07.858Z">
+<meta property="article:modified_time" content="2023-05-12T20:33:38.448Z">
+<meta property="article:author" content="Stephen Cooper">
+<meta property="article:tag" content="PSVita">
+<meta property="article:tag" content="VitaDock+">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ste2425.github.io/images/vitadockaux/thumb.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">
+          
+
+          Super De Dupa Scoopa
+        </a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">I have no idea what i&#39;m doing</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Posts</a>
+        
+          <a class="main-nav-link" href="/about">About Me</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+
+        
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ste2425.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-VitaDock-Manually-Apply-Aux-Audio-Feature" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/" class="article-date">
+  <time datetime="2023-05-12T14:12:07.858Z" itemprop="datePublished">12-05-2023</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      VitaDock+ Manually Apply Aux Audio Feature
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>This little write up documents how to manually apply my feature change to the VitaDock+ project to enable the use of Aux Audio.</p>
+<span id="more"></span>
+
+<div class="alert alert-warning">
+      <p><strong>This is not an official process</strong></p>
+<p>If something does not work please contact me rather than logging an issue on the VitaDock+ repostory. I doubt anyone will see my ramblings but i don’t want to cause any extra work for those maintaining the official project!</p>
+
+      </div>
+
+<p><strong>TLDR;</strong> <em>Get to the <a href="#Lets-do-it">point</a>.</em></p>
+<p>The VitaDock+ is a fantastic project, you can see it <a target="_blank" rel="noopener" href="https://github.com/SilentNightx/VitaDockPlus">here</a>.</p>
+<p>It allows you, in combination with some PSVita plugins, to stream audio and video from your PSVita to your telly using a RPi. Essentially it gives you an experience very close to the Nintendo Switch.</p>
+<p>When combined with a nice pretty little 3D printed dock its a really impressive setup.</p>
+
+  <a class="fancybox" 
+    target="_blank" rel="noopener" href="https://cdn.thingiverse.com/assets/66/14/a0/e8/7a/featured_preview_David.O_Dock.jpg"
+    title=""
+  >
+    <img
+      src="https://cdn.thingiverse.com/assets/66/14/a0/e8/7a/featured_preview_David.O_Dock.jpg"
+      style="max-width: 300px"
+      alt="" />
+  </a>
+
+  <span class="caption hide">
+    
+  </span>
+
+
+<p style="text-align: center">Image credit to the 3D model creator <a target="_blank" rel="noopener" href="https://www.thingiverse.com/thing:3942821">here</a></p>
+
+<p>By default You are expected to use Bluetooth Audio and pair the PSVita with the RPi. I allong with others on the <code>VitaDock(+)</code> Discord server have had issues getting the two to pair. It seems to be very particular about the dongles it will use.</p>
+<p>Once you have managed to pair them you have to manually connect and disconnect the RPi from within the PSVitas settings. This is a rather tedious process IMHO.</p>
+<p>I decided to write a feature allowing someone to choose between Bluetooth audio or Aux audio. This feature is currently in a Pull Request (you can view that <a target="_blank" rel="noopener" href="https://github.com/SilentNightx/VitaDockPlus/pull/32">here</a>) however untill that gets merged you can manually apply those changes instead.</p>
+<p>Read below to figure out how.</p>
+<h2 id="Lets-do-it"><a href="#Lets-do-it" class="headerlink" title="Lets do it"></a>Lets do it</h2><div class="alert alert-info">
+      <p>Before doing this work <em>don’t</em> connect the PSVita to the RPi.</p>
+
+      </div>
+
+<ul>
+<li>Deploy the Experimental VitaDock+ V2 image <a target="_blank" rel="noopener" href="https://github.com/SilentNightx/VitaDockPlus/releases/">here</a><ul>
+<li>The Raspberry Pi Imager <a target="_blank" rel="noopener" href="https://www.raspberrypi.com/software/">here</a> can be used.</li>
+</ul>
+</li>
+<li>Once deployed insert the SD into your RPi and boot it for the first time. Let it do its first time setup.</li>
+<li>Now you need to copy the required files onto your RPi, how you do that is upto you (SSH, thumb drive, floppy disk…) however ensure you copy the following files to the RPi<ul>
+<li>Download the files needed from my fork <a target="_blank" rel="noopener" href="https://github.com/ste2425/VitaDockPlus/tree/addAuxInput">here</a></li>
+<li>Click the green <code>code</code> button and select <code>Download Zip</code></li>
+<li>Copy the following files over to the pi:<table>
+<thead>
+<tr>
+<th>Location in Zip</th>
+<th>Location on RPi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>All the files ending in <code>.sh</code> located in <code>/home/pi</code></td>
+<td><code>/home/pi</code></td>
+</tr>
+<tr>
+<td><code>vitadock.conf</code> located in <code>/home/pi</code></td>
+<td><code>/home/pi</code></td>
+</tr>
+<tr>
+<td><code>auxAudio.png</code> located in <code>/home/pi/Pictures/Icons</code></td>
+<td><code>/home/pi/Pictures/Icons</code></td>
+</tr>
+<tr>
+<td><code>aucAudioConfigure.png</code> located in <code>/home/pi/Pictures/Icons</code></td>
+<td><code>/home/pi/Pictures/Icons</code></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li>Once copied you need to take ownership of the <code>.sh</code> files and mark them as executable<ul>
+<li>from a terminal run <code>sudo chown pi *.sh &amp;&amp; chmod +rwx *.sh</code></li>
+</ul>
+</li>
+<li>Now you need to add the menu items, this is done with the <code>menulibre</code> tool<ul>
+<li>open a terminal and run <code>menulibre</code></li>
+<li>You may see warning messages logged but this is fine, wait till the tool opens</li>
+</ul>
+</li>
+<li>when the tools GUI opens you should see the custom menu represented on the left<ul>
+<li>You may need to expand the <code>Options</code> item</li>
+</ul>
+</li>
+</ul>
+
+  <a class="fancybox" 
+    href="/images/vitadockaux/menulibre.png"
+    title="Menu Libre Tool"
+  >
+    <img
+      src="/images/vitadockaux/menulibre.png"
+      style="max-width: 300px"
+      alt="Menu Libre Tool" />
+  </a>
+
+  <span class="caption ">
+    Menu Libre Tool
+  </span>
+
+
+<ul>
+<li>With the <code>Options</code> menu highlighted click the <code>+</code> button in the top left.</li>
+<li>Now add the <code>Enable Aux</code> menu item. Set the settings as seen in the image below. Click the icon on the left to select the <code>auxAudio.png</code> image coppied earlier.<ul>
+<li>Be sure to tick the <code>Run In Terminal</code> tick box.</li>
+<li>Note the command begins with <code>./</code></li>
+<li>Once set click the <code>save</code> button in the top left.</li>
+</ul>
+</li>
+</ul>
+
+  <a class="fancybox" 
+    href="/images/vitadockaux/enableAux.png"
+    title="Aux Menu item settings"
+  >
+    <img
+      src="/images/vitadockaux/enableAux.png"
+      style="max-width: 300px"
+      alt="Aux Menu item settings" />
+  </a>
+
+  <span class="caption ">
+    Aux Menu item settings
+  </span>
+
+
+<ul>
+<li>Now add the <code>Configure Aux</code> menu item following the same approach as above.<ul>
+<li>Note the command begins with <code>./</code></li>
+</ul>
+</li>
+</ul>
+
+  <a class="fancybox" 
+    href="/images/vitadockaux/configureAux.png"
+    title="Configure Aux Menu item settings"
+  >
+    <img
+      src="/images/vitadockaux/configureAux.png"
+      style="max-width: 300px"
+      alt="Configure Aux Menu item settings" />
+  </a>
+
+  <span class="caption ">
+    Configure Aux Menu item settings
+  </span>
+
+
+<ul>
+<li>You can now close <code>Menu Libre</code>.</li>
+<li>Insert the USB Audio capture device.</li>
+<li>Now reboot the pi</li>
+<li>Launch the menu item <code>Enable Aux Audio</code><ul>
+<li>This will launch the <code>Aux Audio Configuration tool</code> for you.</li>
+</ul>
+</li>
+<li>There are a few information screens to read through, press <code>enter</code> to continue.</li>
+<li>Now select the USB Audio capture device, there will most likely only be one option to choose from.<ul>
+<li>The name you see will be different to mine</li>
+</ul>
+</li>
+</ul>
+
+  <a class="fancybox" 
+    href="/images/vitadockaux/inputSelect.png"
+    title="Select USB Audio Capture Device"
+  >
+    <img
+      src="/images/vitadockaux/inputSelect.png"
+      style="max-width: 300px"
+      alt="Select USB Audio Capture Device" />
+  </a>
+
+  <span class="caption ">
+    Select USB Audio Capture Device
+  </span>
+
+
+<ul>
+<li>Next select the audio output device, this is most likely the HDMI output which will be auto selected.</li>
+</ul>
+
+  <a class="fancybox" 
+    href="/images/vitadockaux/outputSelect.png"
+    title="Select the output audio device"
+  >
+    <img
+      src="/images/vitadockaux/outputSelect.png"
+      style="max-width: 300px"
+      alt="Select the output audio device" />
+  </a>
+
+  <span class="caption ">
+    Select the output audio device
+  </span>
+
+
+<ul>
+<li>Now the Aux audio is fully configured, however you can re-run the configuration tool by selecting its menu item you added earlier.</li>
+<li>Connect the Vita to the RPi, don’t forget to use a ground loop isolater to remove the hum.</li>
+<li>You should now be able to see and hear your vita through the TV!</li>
+</ul>
+
+
+        
+          <div class="signoff">
+    
+        <div class="signoff-avatar">     
+            <span>  
+                <img class="no-fancybox" src="/images/avatar.png" />
+            </span>
+        </div>
+    
+    
+    <div class="signoff-content">
+        <p>
+            Hi, my names <strong>Stephen Cooper</strong>, I'm a software engineer specialising in web-based technologies.
+        </p>
+    
+        <p>
+            I'm probably not qualified to talk to you about what ever it is I've just talked to you about. 
+        </p>
+    
+        
+            <p>        
+                Why not reach out on <a target="_blank" rel="noopener" href="https://twitter.com/_s_cooper">Twitter</a> to see what I'm upto?
+            </p>
+        
+    </div>
+</div>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ste2425.github.io/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/" data-id="clhl0o6sv000ggcue0c326b9j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PSVita/" rel="tag">PSVita</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VitaDock/" rel="tag">VitaDock+</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/22/01/2023/3DS-no-power/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">3DS - Not powering on</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3DS/" rel="tag">3DS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PSVita/" rel="tag">PSVita</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VitaDock/" rel="tag">VitaDock+</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp/" rel="tag">psp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/psp-consolizer/" rel="tag">psp-consolizer</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/3DS/" style="font-size: 10px;">3DS</a> <a href="/tags/PSVita/" style="font-size: 10px;">PSVita</a> <a href="/tags/VitaDock/" style="font-size: 10px;">VitaDock+</a> <a href="/tags/psp/" style="font-size: 20px;">psp</a> <a href="/tags/psp-consolizer/" style="font-size: 15px;">psp-consolizer</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/">VitaDock+ Manually Apply Aux Audio Feature</a>
+          </li>
+        
+          <li>
+            <a href="/22/01/2023/3DS-no-power/">3DS - Not powering on</a>
+          </li>
+        
+          <li>
+            <a href="/08/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/">PSP Internal Consolizer - Fitting FPCs</a>
+          </li>
+        
+          <li>
+            <a href="/21/12/2022/PSP-Internal-Consolizer-Making-Connections/">PSP Internal Consolizer - Making Connections</a>
+          </li>
+        
+          <li>
+            <a href="/30/11/2022/psp-coin-cell/">Replacing PSP Super Capacitor With Cell Battery</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 Stephen Cooper<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Posts</a>
+  
+    <a href="/about" class="mobile-nav-link">About Me</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/particles.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
