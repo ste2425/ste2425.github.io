@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
+        <loc>https://ste2425.github.io/02/06/2023/continuing-the-psp-consolizer-project/</loc>
+    
+        <lastmod>2023-06-02</lastmod>
+    
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+  
+    <url>
         <loc>https://ste2425.github.io/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/</loc>
     
         <lastmod>2023-05-12</lastmod>
@@ -57,7 +66,7 @@
   
     <url>
         <loc>https://ste2425.github.io/</loc>
-        <lastmod>2023-05-12</lastmod>
+        <lastmod>2023-06-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -65,35 +74,35 @@
   
     <url>
         <loc>https://ste2425.github.io/tags/psp/</loc>
-        <lastmod>2023-05-12</lastmod>
+        <lastmod>2023-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
   
     <url>
         <loc>https://ste2425.github.io/tags/psp-consolizer/</loc>
-        <lastmod>2023-05-12</lastmod>
+        <lastmod>2023-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
   
     <url>
         <loc>https://ste2425.github.io/tags/3DS/</loc>
-        <lastmod>2023-05-12</lastmod>
+        <lastmod>2023-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
   
     <url>
         <loc>https://ste2425.github.io/tags/PSVita/</loc>
-        <lastmod>2023-05-12</lastmod>
+        <lastmod>2023-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
   
     <url>
         <loc>https://ste2425.github.io/tags/VitaDock/</loc>
-        <lastmod>2023-05-12</lastmod>
+        <lastmod>2023-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
