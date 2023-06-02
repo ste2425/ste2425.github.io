@@ -19,7 +19,7 @@ Anyway, after a number of people have shown interest in the PSP-Consolizer I’v
 
 # I'm not alone
 
-During this project I’ve had support from a member of the PSP Discord called `Peter Lustig`. Without the help of this person I don't think the project would have made it this far and certainly wouldn't be able to support the PSP-3000. I just wanted to give credit for the brilliant help they have offered, this is a joint project, and they deserve the credit too.
+During this project I’ve had support from a member of the PSP Discord titled `Peter Lustig`. Without the help of this person I don't think the project would have made it this far and certainly wouldn't be able to support the PSP-3000. I just wanted to give credit for the brilliant help they have offered, this is a joint project, and they deserve the credit too.
 
 # So what’s new?
 
