@@ -130,7 +130,7 @@ export async function sendNextBlock(logger, setProgres) {
 
     const dataToSend = new DataView(update, currentPosition, amountToWrite);
 
-    logger.log('Sending Block...');
+    logger.log(`Sending Block size: ${amountToWrite}`);
 
     await characteristic.writeValueWithResponse(dataToSend);
 
