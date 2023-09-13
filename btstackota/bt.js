@@ -142,7 +142,7 @@ export async function sendNextBlock(logger, setProgres) {
     currentPosition += amountToWrite;
     remaining -= amountToWrite;
 
-    logger.log(`Ammount remaining: ${remaining}`);
+    logger.log(`Amount Sent: ${currentPosition}`);
 
     await new Promise((res) => setTimeout(res, 100));
 
@@ -167,6 +167,9 @@ export async function beginOTA(_update, logger, setProgres) {
     remaining = totalSize;
     amountToWrite = 0;
     currentPosition = 0;
+    
+    logger.log('Upload begining');
+    logger.log(`Binary Size: ${totalSize}`);
 
     await sendNextBlock(logger, setProgres);
 }
