@@ -1,10 +1,10 @@
-https://ste2425.github.io/02/06/2023/continuing-the-psp-consolizer-project/
-https://ste2425.github.io/12/05/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/
-https://ste2425.github.io/22/01/2023/3DS-no-power/
-https://ste2425.github.io/08/01/2023/PSP-Internal-Consolizer-Fitting-FPCs/
-https://ste2425.github.io/21/12/2022/PSP-Internal-Consolizer-Making-Connections/
-https://ste2425.github.io/30/11/2022/psp-coin-cell/
+https://ste2425.github.io/14/09/2023/psp-coin-cell/
 https://ste2425.github.io/about/index.html
+https://ste2425.github.io/14/09/2023/PSP-Internal-Consolizer-Fitting-FPCs/
+https://ste2425.github.io/14/09/2023/3DS-no-power/
+https://ste2425.github.io/14/09/2023/PSP-Internal-Consolizer-Making-Connections/
+https://ste2425.github.io/14/09/2023/continuing-the-psp-consolizer-project/
+https://ste2425.github.io/14/09/2023/VitaDock-Manually-Apply-Aux-Audio-Feature/
 https://ste2425.github.io/
 https://ste2425.github.io/tags/psp/
 https://ste2425.github.io/tags/psp-consolizer/
