@@ -12,9 +12,9 @@
 </head>
 
 <body class="h-100">
-    <div id="fadein" class="position-fixed top-0 start-0 w-100 h-100 bg-white"
+    <div id="fadein" class="position-fixed top-0 start-0 w-100 h-100 bg-custom"
         style="z-index: 10; animation: fadeinall 1s normal 0.3s both;"></div>
-    <div id="banner" class="position-fixed top-0 start-0 w-100 h-100 bg-black" style="z-index: -1"></div>
+    <div id="banner" class="position-fixed top-0 start-0 w-100 h-100" style="z-index: -1; background-color: #f1e8e8"></div>
 
     <style>
         @keyframes fadeinall {
@@ -47,18 +47,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid grey;
+            border: 2px solid #e0be53;
         }
 
         .avatar img {
             height: 150px;
             width: 150px;
         }
+
+        .bg-custom {
+            background-color: #FCFAFA;
+        }
+
+        a:hover, a:focus {
+            background-color: #e0be53 !important;
+        }
     </style>
     <main class="h-100">
         <div class="container h-100">
             <div class="row justify-content-center h-100">
-                <div class="col-9 col-md-6 bg-white h-100">
+                <div class="col-9 col-md-6 bg-custom h-100">
                     <div class="row justify-content-center pb-5 pt-5">
                         <div class="rounded-circle avatar">
                             <img class="rounded-circle" alt="avatar"
@@ -66,7 +74,7 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <h1 class="pb-2">Hi, i'm Stephen Cooper <small class="text-muted">a.k.a Scoop</small></h1>
+                        <h1 class="pb-2">Hi, i'm Stephen <br> <small class="text-muted">a.k.a Scoop</small></h1>
                         <p>I'm a self taught Software Enginner based in the UK. With a passion for JavaScript, mechanics
                             and taking things apart, <small>I can usually put it back together again too!</small></p>
                     </div>
