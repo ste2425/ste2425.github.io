@@ -1,9 +1,11 @@
 const pages = {
-	'https://ste2425.github.io/psp-bluetooth/': 'https://ste2425.github.io/PSP-Bluetooth/'
+	'https://ste2425.github.io/psp-bluetooth/blog/': 'https://ste2425.github.io/PSP-Bluetooth/blog/',
+	'https://ste2425.github.io/psp-bluetooth/cv/': 'https://ste2425.github.io/PSP-Bluetooth/CV/',
+	'https://ste2425.github.io/psp-bluetooth/': 'https://ste2425.github.io/PSP-Bluetooth/',
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	let url = window.location.href;
+	let url = window.location.href.toLowerCase();
 
 	if (!url.endsWith('/'))
 		url += '/';
@@ -18,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			container.querySelector('a').setAttribute('href', redirectURL);
 	
 			console.log('REDIRECTING TO', redirectURL);
+
+			window.location.href = redirectURL;
 
 			break;
 		}
