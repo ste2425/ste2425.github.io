@@ -1,18 +1,25 @@
 const pages = {
-	'https://ste2425.github.io/psp-bluetooth': 'https://ste2425.github.io/PSP-Bluetooth'
+	'https://ste2425.github.io/psp-bluetooth/': 'https://ste2425.github.io/PSP-Bluetooth/'
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	const url = window.location.href;
+	let url = window.location.href;
 
-	if (url in pages) {
-		const container = document.querySelector('#redirect-container');
+	if (!url.endsWith('/'))
+		url += '/';
 
-		container.querySelector('em').textContent = pages[url];
-		container.querySelector('a').setAttribute('href', pages[url]);
+	for (const page in pages) {
+		if (url.startsWith(page)) {
+			const container = document.querySelector('#redirect-container');
+	
+			const redirectURL = url.replace(page, pages[page])
+	
+			container.querySelector('em').textContent = redirectURL;
+			container.querySelector('a').setAttribute('href', redirectURL);
+	
+			console.log('REDIRECTING TO', redirectURL);
 
-		window.location = pages[url];
-	} else {
-		document.querySelector('#links-container').classList.remove('d-none');
+			break;
+		}
 	}
 });
