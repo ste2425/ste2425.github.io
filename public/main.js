@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (url.startsWith(page)) {
 			const container = document.querySelector('#redirect-container');
 	
-			const redirectURL = url.replace(page, pages[page])
+			let redirectURL = url.replace(page, pages[page]);
+
+			// pages bound to the final route wont get hit in github pages if the route ends with /
+			if (redirectURL.endsWith('/'))
+				redirectURL = redirectURL.substring(0, str.length - 1);
 	
 			container.querySelector('em').textContent = redirectURL;
 			container.querySelector('a').setAttribute('href', redirectURL);
