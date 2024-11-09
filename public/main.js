@@ -1,6 +1,6 @@
 const pages = {
-	'https://ste2425.github.io/psp-bluetooth/blog/': 'https://ste2425.github.io/blog/',
-	'https://ste2425.github.io/psp-bluetooth/cv/': 'https://ste2425.github.io/CV/',
+	'https://ste2425.github.io/blog/': 'https://ste2425.github.io/blog/',
+	'https://ste2425.github.io/cv/': 'https://ste2425.github.io/CV/',
 	'https://ste2425.github.io/psp-bluetooth/': 'https://ste2425.github.io/PSP-Bluetooth/',
 }
 
