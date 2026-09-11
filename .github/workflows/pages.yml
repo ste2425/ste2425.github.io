@@ -33,8 +33,15 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: Check public directory
+        run: |
+          if [ ! -d "public" ]; then
+            echo "Error: public directory not found"
+            exit 1
+          fi
+          ls -la public/
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: './public'
